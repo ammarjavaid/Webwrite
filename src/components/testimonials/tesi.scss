@@ -1,0 +1,114 @@
+@import "../../sass/var";
+
+.main__testi{
+    margin-bottom: 3rem;
+    margin-top: 7rem;
+    @media screen and (max-width: 540px) {
+        margin-top: 4rem;
+    }
+    h1{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+    .card__section__testimonials{
+        .card{
+            padding: 40px 50px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            border-radius: 4px !important;
+            border: 1px solid #E0E0E0 !important;
+            height: 340px;  
+            @media screen and (max-width: 991px) {
+                height: 410px;
+            }
+            @media screen and (max-width: 540px) {
+                height: 670px;
+                padding: 40px 10px !important;
+            }
+            &:hover{
+                background-color: $section-bg;
+            }
+            @media screen and (max-width: 991px) {
+                padding: 30px 40px;
+            }
+            @media screen and (max-width: 375px) {
+                padding: 30px 20px;
+            }
+            .card__top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .card__top__left{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    img{
+                        width: 65px;
+                        border-radius: 50%;
+                    }
+                    div{
+                        line-height: 10px;
+                        h4{
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 14px;
+                            margin-bottom: 0;
+                            font-size: 12px;
+                            color: $text-color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .card__top__right{
+                  .twitter{
+                    color: $blue-color;
+                    font-size: 20px;
+                  }  
+                }
+            }
+            .card__bottom{
+                padding-top: 2rem;
+                p{
+                    font-size: 14px;
+                    color: $text-color;
+                    margin-bottom: 0;
+                    line-height: 30px;
+                }
+            }
+        }
+        .owl-dots{
+            display: flex;
+            justify-content: center;
+            column-gap: 5px;
+            margin-top: 25px;
+            // position: absolute;
+            // bottom: 20px; /* Initial position of the dots */
+            // left: 50%;
+            // transform: translateX(-50%);
+            // z-index: 1;
+        }
+        
+        .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
+            padding: 40px;
+            width: 8px;
+            height: 8px;
+            // border: 1px solid rgba(129,129,129, .5) !important;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(129,129,129, .4) !important;
+            // bottom: calc(50% + (500px - 20px) / 2); /* Adjust the height of the active card here */
+        }
+        
+        .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.active{
+            background-color: rgba(129,129,129, 1) !important;
+            // bottom: calc(50% + (500px - 20px) / 2); /* Adjust the height of the active card here */
+        }
+    }
+}
+
+

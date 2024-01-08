@@ -1,0 +1,43 @@
+@import "../../sass/var";
+
+.counter{
+    background-color: $section-bg;
+    margin-bottom: 5rem;
+    padding: 2.5rem 0;
+    max-width: 1540px;
+    margin: auto;
+    .counter__content__main{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        @media screen and (max-width: 500px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .counter__content{
+            img{
+                width: 15px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                column-gap: 2px;
+                justify-content: center;
+                margin-top: 1rem;
+                h1{
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: #1E266D;
+                }
+                span{
+                    color: #1E266D;
+                }
+            }
+            p{
+                color: #1E266D;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}

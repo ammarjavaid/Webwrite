@@ -1,0 +1,11 @@
+@mixin buttons {
+  background-color: $blue-color;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,64 @@
+@import "../../sass/var";
+
+.main_choose {
+  padding: 5rem 0;
+  .head {
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  .choose__us {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      width: 95%;
+      margin: auto;
+    }
+    .choose__left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 70%;
+      }
+    }
+    .choose__right {
+      width: 100%;
+      img {
+        width: 25%;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 15px;
+        line-height: 30px;
+        color: $text-color;
+        font-weight: 600;
+        width: 60%;
+        @media screen and (max-width: 991px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      h5 {
+        font-size: 15px;
+        font-weight: 600;
+        color: $text-color;
+        padding-top: 1.3rem;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+    }
+  }
+}

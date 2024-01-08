@@ -1,0 +1,76 @@
+@import "../../sass/var";
+
+.portalOverlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+
+  z-index: 10000;
+  //   background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+
+  top: 0;
+  left: 0;
+}
+.portalContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000000;
+  opacity: 100;
+  height: 100vh;
+  width: 100%;
+  //   / animation: show-modal 0.6s ease-in-out; /
+}
+
+.img__modal__content {
+  width: fit-content;
+  height: 70%;
+  background-color: $section-bg;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in;
+  @media screen and (max-width: 540px) {
+    height: 50%;
+  }
+  @media screen and (max-width: 440px) {
+    width: 90%;
+  }
+
+  .images__show {
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      // object-fit: contain;
+      // object-fit: cover;
+    }
+  }
+  .close {
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    font-size: 35px;
+    @media screen and (max-width: 540px) {
+      top: -20%;
+    }
+    @media screen and (max-width: 440px) {
+      right: 0%;
+    }
+    cursor: pointer;
+    .close__icon {
+      color: $blue-color;
+      font-weight: 700;
+    }
+  }
+}

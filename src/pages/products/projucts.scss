@@ -1,0 +1,67 @@
+@import "../../sass/var";
+@import "../../sass/mixin";
+
+.main__products{
+    background-color: $section-bg;
+    padding: 5rem 0;
+    padding-bottom: 7rem;
+    margin-top: 5.3rem;
+    .products__content{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+        img{
+            width: 80px;
+            margin: 2rem 0;
+        @media screen and (max-width: 500px) {
+            width: 60px;
+        }
+        }
+        h1{
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #0C0F16;
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+        }
+        }
+        p{
+            color: #4E5B77;
+            font-size: 15px;
+        @media screen and (max-width: 500px) {
+            font-size: 13px;
+        }
+        }
+        .products__icons{
+            color: #828282;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 20px;
+        @media screen and (max-width: 500px) {
+            font-size: 17px;
+        }
+        }
+        button{
+            @include buttons;
+            transition: .4s ease-in-out;
+            &:hover{
+                background: transparent;
+                border: 1px solid $blue-color;
+                color: $blue-color;
+            }
+        @media screen and (max-width: 500px) {
+            padding: 12px 22px;
+            font-size: 10px;
+        }
+        }
+    }
+}

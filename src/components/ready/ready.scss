@@ -1,0 +1,95 @@
+@import "../../sass/var";
+
+.main__ready {
+  margin-bottom: -10px;
+  position: relative;
+  max-width: 1550px;
+  margin: auto;
+  margin-bottom: -10px;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 81, 251, 1);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+  }
+  video {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+  }
+  .text {
+    padding: 8rem 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffff;
+      line-height: 45px;
+      @media screen and (max-width: 375px) {
+        font-size: 25px;
+      }
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      padding-top: 1.7rem;
+      padding-bottom: 2rem;
+      a {
+        text-decoration: none;
+      }
+      button {
+        padding: 14px 30px;
+        border: none;
+        background-color: #ffff;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: $text-color;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        .btns {
+          font-size: 18px;
+          color: #53c07e;
+          transition: all 0.5s ease-in-out;
+          @media screen and (max-width: 375px) {
+            font-size: 15px;
+          }
+        }
+        @media screen and (max-width: 375px) {
+          padding: 12px 25px;
+          font-size: 12px;
+        }
+        &:hover {
+          background-color: $blue-color;
+          color: #ffff;
+          .btns {
+            color: #ffff;
+          }
+        }
+      }
+    }
+    p {
+      color: #ffff;
+      font-size: 15px;
+      span {
+        a {
+          color: #f6ad01;
+        }
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 13px;
+      }
+    }
+  }
+}

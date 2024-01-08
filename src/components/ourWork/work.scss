@@ -1,0 +1,66 @@
+@import "../../sass/var";
+
+.main__work {
+  background-color: $section-bg;
+  margin-bottom: 4rem;
+  padding: 4.7rem 0;
+  .head {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-family: $poppins-family;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    p {
+      color: $text-color;
+      padding: 1rem 0;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
+  }
+  .work__content {
+    display: flex;
+    flex-wrap: wrap;
+    .work__content__imgs {
+      display: flex;
+      column-gap: 100px;
+      margin-top: 2rem;
+      @media screen and (max-width: 768px) {
+        column-gap: 50px;
+      }
+      @media screen and (max-width: 400px) {
+        column-gap: 20px;
+      }
+      img {
+        width: 100%;
+      }
+      .left__imgs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+        @media screen and (max-width: 768px) {
+          row-gap: 50px;
+        }
+        @media screen and (max-width: 400px) {
+          row-gap: 20px;
+        }
+      }
+      .right__imgs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+        @media screen and (max-width: 768px) {
+          row-gap: 50px;
+        }
+        @media screen and (max-width: 400px) {
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}

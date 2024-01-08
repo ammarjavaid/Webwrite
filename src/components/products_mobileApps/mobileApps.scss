@@ -1,0 +1,134 @@
+@import "../../sass/mixin";
+@import "../../sass//var";
+
+.main{
+    margin-bottom: 4rem;
+    .head__buttons{
+        width: 100%;
+        text-align: center;
+        margin: 4rem 0;
+        .one{
+            background-color: $blue-color;
+            border: none;
+            padding: 12px 45px;
+            color: #ffff;
+            font-size: 13px;
+            font-weight: 600;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+                padding: 11px 40px;
+            }
+            @media screen and (max-width: 475px) {
+                font-size: 10px;
+                padding: 10px 37px;
+            }
+        }
+        .one__in{
+            background-color: $section-bg;
+            border: none;
+            padding: 12px 45px;
+            color: #828282;
+            font-size: 13px;
+            font-weight: 600;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+                padding: 11px 40px;
+            }
+            @media screen and (max-width: 475px) {
+                font-size: 10px;
+                padding: 10px 37px;
+            }
+        }
+        .two{
+            background-color: $section-bg;
+            border: none;
+            padding: 12px 25px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+                padding: 11px 23px;
+            }
+            @media screen and (max-width: 475px) {
+                font-size: 10px;
+                padding: 10px 19px;
+            }
+        }
+        .two__in{
+            background-color: $section-bg;
+            border: none;
+            padding: 12px 25px;
+            color: #828282;
+            font-size: 13px;
+            font-weight: 600;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+                padding: 11px 23px;
+            }
+            @media screen and (max-width: 475px) {
+                font-size: 10px;
+                padding: 10px 19px;
+            }
+        }
+        .active{
+            background-color: $blue-color;
+        }
+    }
+    
+    .mobile__apps__content{
+        .check{
+            @media screen and (max-width: 1050px) {
+                width: 80% !important;
+            }
+            @media screen and (max-width: 900px) {
+                width: 100% !important;
+            }
+            @media screen and (max-width: 768px) {
+                gap: 30px !important;
+            }
+            img{
+                @media screen and (max-width: 768px) {
+                    width: 100px;
+                }
+            }
+            div{
+                h2{
+                    @media screen and (max-width: 991px) {
+                        font-size: 16px !important;
+                    }
+                }
+                p{
+                    @media screen and (max-width: 991px) {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .last__butn{
+        text-align: center;
+        button{
+            @include buttons;
+            @media screen and (max-width: 375px) {
+                font-size: 10px;
+                padding: 11px 25px;
+            }
+            .icon{
+                font-size: 20px;
+                @media screen and (max-width: 375px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

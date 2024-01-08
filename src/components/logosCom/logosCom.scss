@@ -1,0 +1,22 @@
+.logos__content{
+    margin: 3rem auto;
+    @media screen and (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        row-gap: 40px;
+    }
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        row-gap: 40px;
+    }
+    .images{
+        display: flex;
+        align-items: center !important;
+        width: 150px;
+        img{
+            width: 150px;
+            height: 100px;
+        }
+    }
+}
